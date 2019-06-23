@@ -1,21 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
+import StyledHero from "../components/StyledHero"
 
-const IndexPage = () => (
+export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid} />
   </Layout>
 )
 
-export default IndexPage
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: { eq: "Nijmegen-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 4160, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
