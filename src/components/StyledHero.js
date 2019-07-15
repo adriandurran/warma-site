@@ -11,10 +11,7 @@ const StyledHero = ({ children, img, className, home }) => {
 }
 
 export default styled(StyledHero)`
-  background: ${props =>
-    props.home
-      ? "linear-gradient(rgba(94, 156, 174, 0.7), rgba(255, 255, 255, 0.7))"
-      : "none"};
+  background: ${props => props.home};
   background-position: center;
   background-size: cover;
   opacity: 1 !important;
