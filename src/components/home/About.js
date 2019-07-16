@@ -33,19 +33,18 @@ const About = () => {
         <article className={styles.aboutInfo}>
           <h4>Royal Air Force Walking and Road Marching Association </h4>
           <p>
-            Our aim is to promote the sport of walking of all types within the
-            Royal Air Force and it's sister services.{" "}
+            The Royal Air Force Walking and Road Marching Association was formed
+            on 1st April 1980.
           </p>
           <p>
-            We circulate information to members about Walking and Road Marching
-            events, in the UK and abroad. The Association has already organised
-            RAF entries into numerous events overseas and plans to continue this
-            in the future. We also organise our own Two Day March every April, a
-            "Winter Walk" in Autumn and an Annual Dinner.
+            Our aim is to promote the sport of walking of all types within the
+            Royal Air Force and it's sister services.
           </p>
-          <button type="button" className="btn-primary">
-            Read More
-          </button>
+          <p>
+            We welcome both serving and ex-serving members of the Armed Forces,
+            Cadet Forces and Civilians. We cater for both the serious road
+            marcher and those interested in the more fun type events.
+          </p>
         </article>
       </div>
     </section>

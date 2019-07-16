@@ -4,10 +4,10 @@ import styled from "styled-components"
 const Title = ({ title, subtitle }) => {
   return (
     <TitleWrapper>
-      <h4>
+      <h3>
         <span className="title">{title}</span>
         <span>{subtitle}</span>
-      </h4>
+      </h3>
     </TitleWrapper>
   )
 }
@@ -16,10 +16,10 @@ const TitleWrapper = styled.div`
   text-transform: uppercase;
   font-size: 2.3rem;
   margin-bottom: 2rem;
-  h4 {
+  h3 {
     text-align: center;
     letter-spacing: 5px;
-    color: var(--logoTypeBlue);
+    color: var(--logoTypeRed);
   }
   .title {
     color: var(--mainBlack);
