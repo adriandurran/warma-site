@@ -18,7 +18,7 @@ services:
     ports:
       - 1337:1337
     volumes:
-      - ./strapi-app:/usr/src/api/strapi-app
+      - ./server:/usr/src/api/server
       #- /usr/src/api/strapi-app/node_modules
     depends_on:
       - db
