@@ -9,3 +9,15 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-column-gap: 2rem;
 }
+
+.map {
+  height: 8rem;
+}
+
+.trail {
+  margin: 2rem 0;
+}
+
+.details {
+  margin-bottom: 1rem;
+}

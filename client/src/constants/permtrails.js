@@ -40,7 +40,7 @@ export default [
     location: 'Hampshire',
     distance: '24km',
     description:
-      'This walk takes you through the countryside of north Hampshire, passing through the villages of Odiham and Greywell. The route takes you past the entrance of RAF Odiham, where the Queen reviewed the Royal Air Force in her Coronation year. It also follows a short distance along the Basingstoke canal passing the ruin of Odiham Castle (also known as King Johns Castel).',
+      'This walk takes you through the countryside of north Hampshire, passing through the villages of Odiham and Greywell. The route takes you past the entrance of RAF Odiham, where the Queen reviewed the Royal Air Force in her Coronation year. It also follows a short distance along the Basingstoke canal passing the ruin of Odiham Castle (also known as King Johns Castle).',
     entryCost: '£1',
     awardCost: '£2',
     linktoPDF: 'av.pdf',
