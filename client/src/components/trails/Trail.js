@@ -4,9 +4,11 @@ import {
   CardHeader,
   CardContent,
   CardActions,
-  Typography,
+  CardMedia,
   Link
 } from '@material-ui/core';
+
+import TrailMap from './TrailMap';
 
 import styles from '../../css/trails.module.css';
 
@@ -19,12 +21,14 @@ const Trail = ({ trail }) => {
     entryCost,
     awardCost,
     coords,
-    linktoPDF,
-    featured
+    linktoPDF
   } = trail;
   return (
     <Card className={styles.trail}>
       <CardHeader title={name} subheader={location} />
+      <CardMedia>
+        <TrailMap coords={coords} name={name} />
+      </CardMedia>
       <CardContent>
         <h4 className={styles.details}>Distance:&nbsp; {distance}</h4>
         <p className={styles.details}>{description}</p>
