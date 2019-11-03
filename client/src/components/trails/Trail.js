@@ -33,9 +33,10 @@ const Trail = ({ trail }) => {
         <h4 className={styles.details}>Distance:&nbsp; {distance}</h4>
         <p className={styles.details}>{description}</p>
         <h5 className={styles.details}>Entry cost:&nbsp; {entryCost}</h5>
+        <h5 className={styles.details}>Award cost:&nbsp; {awardCost}</h5>
       </CardContent>
       <CardActions>
-        <Link href="#" className={styles.link}>
+        <Link href={`/trails/${linktoPDF}`} className={styles.link}>
           Download description and route details
         </Link>
       </CardActions>
