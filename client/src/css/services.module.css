@@ -16,7 +16,6 @@
 .service span {
   background: var(--logoTypeBlue);
   padding: 0.5rem;
-  display: inline-block;
   font-size: 5rem;
   margin-bottom: 1.5rem;
   border-radius: 50%;
@@ -30,5 +29,5 @@
 }
 
 .service p {
-  font-family: "MyriadLight", sans-serif;
+  font-family: 'MyriadLight', sans-serif;
 }
