@@ -16,7 +16,7 @@ const Committee = ({ data }) => {
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "7198.jpg" }) {
+    defaultBcg: file(relativePath: { eq: "7198.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp

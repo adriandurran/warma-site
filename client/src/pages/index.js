@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
-import StyledHero from "../components/StyledHero"
-import About from "../components/home/About"
-import Services from "../components/home/Services"
-import FeaturedTrails from "../components/home/FeaturedTrails"
+import Layout from '../components/Layout';
+import SEO from '../components/seo';
+import StyledHero from '../components/StyledHero';
+import About from '../components/home/About';
+import Services from '../components/home/Services';
+import FeaturedTrails from '../components/home/FeaturedTrails';
 
 export default ({ data }) => (
   <Layout>
@@ -16,11 +16,11 @@ export default ({ data }) => (
     <Services />
     <FeaturedTrails />
   </Layout>
-)
+);
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "Nijmegen-1.png" }) {
+    defaultBcg: file(relativePath: { eq: "7052.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
@@ -28,4 +28,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

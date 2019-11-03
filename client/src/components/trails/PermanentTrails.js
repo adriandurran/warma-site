@@ -1,6 +1,9 @@
 import React from 'react';
 import Title from '../Title';
 import styles from '../../css/trails.module.css';
+import permtrails from '../../constants/permtrails';
+
+import Trail from './Trail';
 
 const PermanentTrails = () => {
   return (
@@ -16,7 +19,11 @@ const PermanentTrails = () => {
           more than once in year.
         </p>
       </article>
-      <div className={styles.trails}>trails in here</div>
+      <div className={styles.trails}>
+        {permtrails.map((trail, i) => (
+          <Trail trail={trail} key={i} />
+        ))}
+      </div>
     </section>
   );
 };
