@@ -16,6 +16,7 @@ const OurCommittee = () => {
               title={title}
               name={name}
               description={description}
+              key={i}
             />
           );
         })}
